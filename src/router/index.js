@@ -9,6 +9,11 @@ const router = createRouter({
       name: 'home',
       component: HomeView
     },
+    {
+      path: '/projects/idenlight',
+      name: 'idenlight',
+      component: () => import('../views/HomeView.vue')
+    }
     /*{
       path: '/about',
       name: 'about',

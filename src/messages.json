@@ -1,0 +1,29 @@
+{
+    "en": {
+        "projects": {
+            "idenlight": {
+                "title": "IDEnlight",
+                "shortDescription": "IDEnlight is a project that I created as part of my Master's thesis. Its purpose is to learn about Self-Sovereign Identity and how to use verifiable credentials.",
+                "linkName": "idenlight",
+                "image": "idenlight_logo.png"
+            },
+            "webxplorer": {
+                "title": "WebXplorerEDU",
+                "shortDescription": "WebXplorerEDU is my YouTube channel where I upload educational videos about various web technologies, especially decentralized identity.",
+                "linkName": "webxploreredu",
+                "image": "webxploreredu_logo.png"
+            },
+            "bib-desk": {
+                "title": "Bib-Desk",
+                "shortDescription": "Bib-Desk is a desktop application for managing library data, including books, customers and loans.",
+                "linkName": "bib-desk",
+                "image": "bib-desk_logo.png"
+            }
+        }
+    },
+    "de": {
+        "message": {
+            "hello": "Hallo Welt"
+        }
+    }
+}
