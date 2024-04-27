@@ -17,9 +17,6 @@
         <div :class="{ 'progress-item': true, 'active': navigationStore.getCurrentPage == 3 }">
             <FontAwesomeIcon :icon="faDiagramProject" />
         </div>
-        <div :class="{ 'progress-item': true, 'active': navigationStore.getCurrentPage == 4 }">
-            <FontAwesomeIcon :icon="faStar" />
-        </div>
     </div>
 </template>
 
@@ -35,7 +32,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 200px;
+    height: 160px;
     width: 50px;
     padding: 0.5rem;
 }
@@ -64,7 +61,7 @@
     left: 50%;
     transform: translateX(-50%);
     flex-direction: row;
-    width: 200px;
+    width: 160px;
     height: 50px;
   }
 }
