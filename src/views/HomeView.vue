@@ -31,11 +31,11 @@
 <template>
   <main class="text-slate-200" :onscroll="isElementInViewport">
     <ScrollProgressBar />
-    <div id="1" ref="page1" class="section h-dvh flex justify-center items-center">
+    <div id="1" ref="page1" class="section h-svh flex justify-center items-center">
       <object class="w-full" data="/hero-animation.svg"></object>
     </div>
 
-    <div id="2" ref="page2" class="section h-dvh flex flex-col justify-center items-center">
+    <div id="2" ref="page2" class="section h-svh flex flex-col justify-center items-center">
       <p class="md:w-1/2 w-3/4 text-3xl mb-4">Welcome to my corner of the web!</p>
       <p class="md:w-1/2 w-3/4 font-thin text-xl">I'm Eric, an enthusiastic computer scientist based in Germany. With a passion for Web Development, Self-Sovereign Identity and Web3-Technologies, I strive to create cool and interesting projects to make people's live easier. Through this platform, I aim to showcase my journey and projects. I'm excited to share my story and collaborate on exciting opportunities.</p>
       <div class="flex justify-evenly md:w-1/2 w-3/4 font-thin mt-8 text-3xl">
@@ -45,7 +45,7 @@
       </div>
     </div>
 
-    <div id="3" ref="page3" class="section h-dvh flex flex-col justify-center items-center">
+    <div id="3" ref="page3" class="section h-svh flex flex-col justify-center items-center">
       <div class="text-3xl mb-8">
         Projects
       </div>
@@ -61,7 +61,7 @@
 <style>
   main {
     scroll-snap-type: y mandatory;
-    height: 100vh;
+    height: 100dvh;
     overflow-y: scroll;
   }
   .section {
