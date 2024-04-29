@@ -12,7 +12,12 @@ const router = createRouter({
     {
       path: '/projects/idenlight',
       name: 'idenlight',
-      component: () => import('../views/HomeView.vue')
+      component: () => import('../views/IDEnlightView.vue')
+    },
+    {
+      path: '/projects/webxploreredu',
+      name: 'webxploreredu',
+      component: () => import('../views/WebXplorerEDUView.vue')
     }
     /*{
       path: '/about',

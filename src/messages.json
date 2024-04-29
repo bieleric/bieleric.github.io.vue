@@ -3,7 +3,7 @@
         "projects": {
             "idenlight": {
                 "title": "IDEnlight",
-                "shortDescription": "IDEnlight is a project that I created as part of my Master's thesis. Its purpose is to learn about Self-Sovereign Identity and how to use verifiable credentials.",
+                "shortDescription": "IDEnlight is a web application to learn about Self-Sovereign Identity and how to use verifiable credentials.",
                 "linkName": "idenlight",
                 "image": "idenlight_logo.png"
             },
