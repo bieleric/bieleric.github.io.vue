@@ -7,11 +7,11 @@
     <BaseLayout>
         <PageLayout class="w-3/4 mx-auto md:grid md:grid-cols-12 flex flex-col justify-center items-center">
             <div class="col-span-5 mb-10 md:mb-0">
-                <img :src="'/' + $t('projects.idenlight.image')" />
-                <p class="mt-6 text-xl">{{ $t('projects.idenlight.shortDescription') }}</p>
+                <img class="animate__animated animate__fadeInDown" :src="'/' + $t('projects.idenlight.image')" />
+                <p class="mt-6 text-xl animate__animated animate__fadeInLeft">{{ $t('projects.idenlight.shortDescription') }}</p>
             </div>
             <div class="col-span-7">
-                <img src="/MacBook_IDEnlight.png" />
+                <img class="animate__animated animate__fadeIn" src="/MacBook_IDEnlight.png" />
             </div>
         </PageLayout>
         <PageLayout class="flex flex-col justify-center items-center">

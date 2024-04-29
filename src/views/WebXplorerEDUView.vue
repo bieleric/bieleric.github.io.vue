@@ -7,11 +7,11 @@
     <BaseLayout>
         <PageLayout class="w-3/4 mx-auto md:grid md:grid-cols-12 flex flex-col justify-center items-center">
             <div class="col-span-4 mb-10 md:mb-0">
-                <img :src="'/' + $t('projects.webxplorer.image')" />
-                <p class="mt-6 text-xl">{{ $t('projects.webxplorer.shortDescription') }}</p>
+                <img class="animate__animated animate__fadeInDown" :src="'/' + $t('projects.webxplorer.image')" />
+                <p class="mt-6 text-xl animate__animated animate__fadeInLeft">{{ $t('projects.webxplorer.shortDescription') }}</p>
             </div>
             <div class="col-span-8">
-                <img src="/YouTube_WebXplorerEDU.png" />
+                <img class="animate__animated animate__fadeIn" src="/YouTube_WebXplorerEDU.png" />
             </div>
         </PageLayout>
         <PageLayout class="flex flex-col justify-center items-center">
