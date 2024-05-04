@@ -2,13 +2,19 @@
     import { ref } from "vue";
     import BaseLayout from "@/layouts/BaseLayout.vue";
     import PageLayout from "@/layouts/PageLayout.vue";
-    import ProjectLink from "@/components/ProjectLink.vue"
-    import ScrollProgressBar from "@/components/ScrollProgressBar.vue"
+    import ProjectLink from "@/components/ProjectLink.vue";
+    import ScrollHint from "@/components/ScrollHint.vue";
+    // import ScrollProgressBar from "@/components/ScrollProgressBar.vue"
     import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
     import { faLinkedin, faSquareGithub, faSquareYoutube } from "@fortawesome/free-brands-svg-icons";
     import { useNavigationStore } from "@/stores/navigationStore";
+import { reactive } from "vue";
 
     const navigationStore = useNavigationStore();
+
+    const state = reactive({
+        scrollHintVisible: true,
+    })
 
     const page1 = ref(null);
     const page2 = ref(null);
@@ -27,12 +33,17 @@
             }
         });
     }
+
+    const scrollHandler = () => {
+        state.scrollHintVisible = false;
+    };
 </script>
 
 <template>
     <!--<BaseLayout :onscroll="isElementInViewport">-->
-    <BaseLayout>
+    <BaseLayout :onscroll="scrollHandler">
         <!--<ScrollProgressBar />-->
+        <ScrollHint :visible="state.scrollHintVisible" />
         <PageLayout id="1" ref="page1" class="flex justify-center items-center">
             <object class="w-full" data="/hero-animation.svg"></object>
         </PageLayout>
@@ -47,7 +58,7 @@
                         transition: {
                             scale: {
                                 duration: 1000,
-                                delay: 200
+                                delay: 100
                             },
                         },
                     }"><FontAwesomeIcon :icon="faLinkedin" /></a>
@@ -58,7 +69,7 @@
                         transition: {
                             scale: {
                                 duration: 1000,
-                                delay: 400
+                                delay: 300
                             },
                         },
                     }"><FontAwesomeIcon :icon="faSquareGithub" /></a>
@@ -69,7 +80,7 @@
                         transition: {
                             scale: {
                                 duration: 1000,
-                                delay: 600
+                                delay: 500
                             },
                         },
                     }"><FontAwesomeIcon :icon="faSquareYoutube" /></a>
@@ -85,7 +96,7 @@
                         transition: {
                             scale: {
                                 duration: 1000,
-                                delay: 200
+                                delay: 100
                             },
                         },
                     }"
@@ -100,7 +111,7 @@
                         transition: {
                             scale: {
                                 duration: 1000,
-                                delay: 400
+                                delay: 300
                             },
                         },
                     }"
@@ -115,7 +126,7 @@
                         transition: {
                             scale: {
                                 duration: 1000,
-                                delay: 600
+                                delay: 500
                             },
                         },
                     }"

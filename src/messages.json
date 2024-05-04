@@ -16,7 +16,7 @@
             "bib-desk": {
                 "title": "Bib-Desk",
                 "shortDescription": "Bib-Desk is a desktop application for managing library data, including books, customers and loans.",
-                "linkName": "bib-desk",
+                "linkName": "bibdesk",
                 "image": "bib-desk_logo.png"
             }
         }

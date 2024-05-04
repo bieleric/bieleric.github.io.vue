@@ -1,5 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import IDEnlightView from '../views/IDEnlightView.vue'
+import WebXplorerEDUView from '../views/WebXplorerEDUView.vue'
+import BibDeskView from '@/views/BibDeskView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -12,21 +15,18 @@ const router = createRouter({
     {
       path: '/projects/idenlight',
       name: 'idenlight',
-      component: () => import('../views/IDEnlightView.vue')
+      component: IDEnlightView
     },
     {
       path: '/projects/webxploreredu',
       name: 'webxploreredu',
-      component: () => import('../views/WebXplorerEDUView.vue')
+      component: WebXplorerEDUView
+    },
+    {
+      path: '/projects/bibdesk',
+      name: 'bibdesk',
+      component: BibDeskView
     }
-    /*{
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/AboutView.vue')
-    }*/
   ]
 })
 
